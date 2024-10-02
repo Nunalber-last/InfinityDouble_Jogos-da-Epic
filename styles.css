@@ -1,0 +1,378 @@
+/* Importando a fonte do Google Fonts */
+@import url('');
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fonte padrão */
+    background-color: #000000; /* Fundo preto para todo o site */
+    color: #ffffff; /* Texto padrão em branco */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    display: flex; /* Usar flexbox para o layout */;
+    align-items:last baseline; /* Alinha verticalmente os itens */
+    justify-content:space-between; /* Espaço entre a imagem e o título */
+    background-color: #000000; /* Cor de fundo do cabeçalho */
+    margin-top: 10px;
+    padding: 10px 0px; /* Espaçamento interno */
+    border-radius: 10px;
+}
+
+.header-content {
+    display: flex; /* Alinha o conteúdo em linha */
+    flex-wrap: wrap;
+    justify-content: left; /* Centraliza esquerda */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Ajuste de tamanho fluido */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.header-content:hover {
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: 0.2s ease;
+}
+
+.slogan-image {
+    width: 90px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin-right: 15px; /* Espaço entre a imagem e o título */
+}
+
+nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+nav :hover{
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: 0.2s ease;
+}
+
+nav ul {
+    list-style-type: none; /* Remove marcadores */
+    padding: 2px; /* Remove padding */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+nav li{
+    padding: 10px 20px;
+}
+
+.item-cabecalho {
+    display: flex;
+    justify-content: center; /* Centraliza os itens, se necessário */
+    gap: 10px; /* Define o espaçamento entre os itens */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-cabecalho li {
+    padding: 0;
+    margin: 0 5px; /* Diminui o espaço horizontal entre os itens */
+}
+
+.item-cabecalho li a {
+    text-decoration: none;
+    padding: 5px 10px; /* Ajusta o espaçamento interno dos links */
+    transition: color 0.3s ease;
+}
+
+
+nav ul li {
+    margin: 0 1rem; /* Espaçamento usando unidades relativas */
+}
+
+nav ul li a {
+    color: #ffffff; /* Texto branco nos botões */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 0.5rem 1rem; /* Usando unidades relativas */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.4s ease, transform 0.4s ease; /* Transições mais fluidas */
+}
+
+nav ul li a:hover {
+    background-color: #273d45; /* Cor de fundo no hover */
+    color: #ffffff; /* Texto branco no hover */
+    transform: scale(1.4); /* Aumenta o tam*/
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.game-section {
+    background-color: #000000;
+    color: #000000;
+    padding: 2rem; /* Ajustando o padding */
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cor-titulo-h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 2rem; /* Tamanho fluido */
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.game-section-galeria {
+    text-align: center;
+    font-size: 2rem; /* Tamanho fluido */
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.game-container {
+    display: flex; /* Usando flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 1rem; /* Espaço entre os itens */
+}
+
+.game-item {
+    background-color: #ffffff;
+    text-decoration: none;
+    background: white;
+    padding: 1rem; /* Menos padding para um layout mais compacto */
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+}
+
+.game-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* Estilos para o rodapé */
+footer {
+    border-radius: 10px;
+    background-color: #232222; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 40px 20px; /* Espaçamento interno */
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as seções quebrem linha em telas menores */
+    justify-content: space-between; /* Espaça igualmente as seções */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.footer-section {
+    flex-basis: 22%; /* Cada seção ocupa 22% do espaço */
+    margin-bottom: 20px; /* Espaço inferior entre seções */
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #ffffff;
+    font-weight: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9em; /* Tamanho de fonte um pouco menor */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove marcadores */
+    padding: 0; /* Remove padding padrão */
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+}
+
+.footer-section ul li a {
+    color: #bbbbbb; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease; /* Transição suave de cor no hover */
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff; /* Texto muda para branco ao passar o mouse */
+}
+
+/* Estilos para ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espaço entre os ícones */
+}
+
+.social-icons li a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos para o rodapé inferior */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444444; /* Linha divisória sutil */
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.8em; /* Texto menor */
+    color: #bbbbbb;
+}
+
+.color-footer-info {
+    color: gray;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .game-item {
+        flex: 1 1 calc(50% - 20px); /* 2 colunas em tablets */
+    }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduzir tamanho do título em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Alinha os itens na coluna */
+    }
+
+    .game-item {
+        flex: 1 1 calc(100% - 20px); /* 1 coluna em telas pequenas */
+    }
+}
+
+.search-filters {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #00e5ff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.search-button {
+    padding: 15px;
+    margin-left: 10px;
+    background-color: #03615b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#ffffff;
+}
+
+.search-button:hover {
+    background-color: #023340; /* Muda a cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: 0.2s ease;
+}
+
+/* Filtros */
+.filter-dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin: 5px;
+}
+
+.filter-button {
+    padding: 15px;
+    background-color: #03615b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#ffffff;
+}
+
+.filter-button:hover {
+    background-color: #023340; /* Muda a cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: 0.2s ease;
+}
+
+.filter-options {
+    display: none;
+    position: absolute;
+    background-color: #089691;
+    border: 1px solid #089691;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0; /* Inicialmente invisível */
+    height: 0; /* Altura inicial */
+    overflow: hidden; /* Esconde conteúdo até ser exibido */
+    transition: height 0.3s ease, opacity 0.3s ease; /* Transição suave */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.filter-options :hover {
+    justify-content: center;
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: 0.2s ease;
+}
+
+.filter-dropdown:hover .filter-options {
+    display: block;
+    opacity: 1; /* Tornar visível */
+    height: auto; /* Deixa a altura automática para o conteúdo */
+    transition: height 0.3s ease, opacity 0.3s ease; /* Transição suave */
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff; /* Cor do texto das opções */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.filter-options label:hover {
+    color: #00eeff; /* Muda a cor do texto ao passar o mouse */
+}
+
+.select-game-button {
+    padding: 5px;
+    background-color: #1dcbc5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-game-button:hover {
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    transition: 0.2s ease;
+    background-color: #00615d;
+}
