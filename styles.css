@@ -20,12 +20,14 @@ header {
 }
 
 .header-content {
+    margin-left: 5%;
     display: flex; /* Alinha o conteúdo em linha */
     flex-wrap: wrap;
     justify-content: left; /* Centraliza esquerda */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Ajuste de tamanho fluido */
     align-items: center; /* Alinha verticalmente os itens */
 }
+
 
 .header-content:hover {
     transform: scale(1.05); /* Aumenta levemente o botão */
@@ -44,7 +46,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 55%;
 }
 
 nav :hover{
@@ -237,35 +239,17 @@ footer {
     color: gray;
 }
 
-/* Responsividade para tablets */
-@media (max-width: 1024px) {
-    .game-item {
-        flex: 1 1 calc(50% - 20px); /* 2 colunas em tablets */
-    }
-}
-
-/* Responsividade para smartphones */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem; /* Reduzir tamanho do título em telas pequenas */
-    }
-
-    nav ul {
-        flex-direction: column; /* Alinha os itens na coluna */
-    }
-
-    .game-item {
-        flex: 1 1 calc(100% - 20px); /* 1 coluna em telas pequenas */
-    }
-}
 
 .search-filters {
+    margin-left: 65%;
     display: flex;
     align-items: center;
 }
 
 .search-input {
     padding: 15px;
+    margin: 15px;
+    margin-right: 0px;
     border-radius: 10px;
     border: 1px solid #00e5ff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -279,7 +263,8 @@ footer {
 
 .search-button {
     padding: 15px;
-    margin-left: 10px;
+    margin: 10px;
+    margin-left: 15px;
     background-color: #03615b;
     border: none;
     border-radius: 10px;
@@ -304,6 +289,7 @@ footer {
 
 .filter-button {
     padding: 15px;
+    margin-left: 0px;
     background-color: #03615b;
     border: none;
     border-radius: 10px;
@@ -375,4 +361,39 @@ footer {
     transform: scale(1.05); /* Aumenta levemente o botão */
     transition: 0.2s ease;
     background-color: #00615d;
+}
+
+/* Responsividade para telas menores que 1200px (Laptops) */
+@media (max-width: 1200px) {
+    h1, header, .header-content, .item-cabecalho {
+        flex-direction: column; /* Coloca os itens do header em coluna */
+        text-align: center; /* Centraliza o texto */
+        align-items: center;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column; /* Empilha os itens de navegação em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+    .game-container {
+        flex-direction: column; /* Empilha os jogos em uma coluna */
+        align-items: center; /* Centraliza os jogos */
+    }
+
+    .game-item {
+        width: 100%; /* Faz com que cada item de jogo ocupe a largura total da tela */
+        margin: 10px 0; /* Adiciona espaçamento entre os itens de jogo */
+    }
+    .search-filters {
+        width: 90%;
+        margin-left: 0%;
+        flex-wrap: wrap;
+    }
+
+    .search-input, .search-button, .filter-dropdown, .filter-button {
+        flex-wrap: wrap;
+        width: 100%; /* Faz com que eles ocupem a largura total da tela */
+        margin: 10px 0; /* Espaçamento entre eles */
+    }
+    
 }
