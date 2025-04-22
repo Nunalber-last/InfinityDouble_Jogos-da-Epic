@@ -23,9 +23,7 @@ https://inifinitydouble.vercel.app
 - **Integração com a Epic Games**: links diretos para aquisição dos jogos na plataforma oficial.
 - **Design responsivo**: interface adaptável a diferentes dispositivos.
 
-## Tecnologias Utilizadas
-
-- **Frontend**:
+## Tecnologias utilizadas
   - HTML5
   - CSS3
   - JavaScript
